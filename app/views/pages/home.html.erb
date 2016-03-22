@@ -12,7 +12,8 @@
                     <%= link_to "View your profile", user_path(current_user), class: 'btn btn-primary btn-lg btn-block' %>
                     
                 <% else %> <%# Link to create profile page %>
-                    <%= link_to "Create ur profile", new_user_profile_path(current_user) if current_user %>
+                    <p>Create your profile to share your information to the community</p>
+                    <%= link_to "Create ur profile", new_user_profile_path(current_user), class: 'btn btn-primary btn-lg btn-block' %>
                 <% end %>
             </div>
         </div>
